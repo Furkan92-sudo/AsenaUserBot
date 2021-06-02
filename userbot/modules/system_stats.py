@@ -171,5 +171,5 @@ CmdHelp('system_stats').add_command(
 ).add_command(
     'pip', '<modül(ler)>', 'Pip modüllerinde arama yapar.'
 ).add_command(
-    'rse', None, 'Asena botunun çalışıp çalışmadığını kontrol etmek için kullanılır.'
+    'rose', None, 'Asena botunun çalışıp çalışmadığını kontrol etmek için kullanılır.'
 ).add()
