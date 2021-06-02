@@ -129,11 +129,11 @@ async def pipcheck(pip):
     else:
         await pip.edit(LANG['EXAMPLE'])
 
-@register(outgoing=True, pattern="^.alive$")
+@register(outgoing=True, pattern="^.rose$")
 async def amialive(e):
     me = await e.client.get_me()
-    if type(PLUGIN_MESAJLAR['alive']) == str:
-        await e.edit(PLUGIN_MESAJLAR['alive'].format(
+    if type(PLUGIN_MESAJLAR['rose']) == str:
+        await e.edit(PLUGIN_MESAJLAR['rose'].format(
             telethon=version.__version__,
             python=python_version(),
             asena=ASENA_VERSION,
@@ -146,8 +146,8 @@ async def amialive(e):
         ))
     else:
         await e.delete()
-        if not PLUGIN_MESAJLAR['alive'].text == '':
-            PLUGIN_MESAJLAR['alive'].text = PLUGIN_MESAJLAR['alive'].text.format(
+        if not PLUGIN_MESAJLAR['rose'].text == '':
+            PLUGIN_MESAJLAR['rose'].text = PLUGIN_MESAJLAR['rose'].text.format(
                 telethon=version.__version__,
                 python=python_version(),
                 asena=ASENA_VERSION,
@@ -159,9 +159,9 @@ async def amialive(e):
                 mention=f'[{me.first_name}](tg://user?id={me.id})'
             )
         if e.is_reply:
-            await e.respond(PLUGIN_MESAJLAR['alive'], reply_to=e.message.reply_to_msg_id)
+            await e.respond(PLUGIN_MESAJLAR['rose'], reply_to=e.message.reply_to_msg_id)
         else:
-            await e.respond(PLUGIN_MESAJLAR['alive'])
+            await e.respond(PLUGIN_MESAJLAR['rose'])
 
 
 CmdHelp('system_stats').add_command(
@@ -171,5 +171,5 @@ CmdHelp('system_stats').add_command(
 ).add_command(
     'pip', '<modül(ler)>', 'Pip modüllerinde arama yapar.'
 ).add_command(
-    'alive', None, 'Asena botunun çalışıp çalışmadığını kontrol etmek için kullanılır.'
+    'rse', None, 'Asena botunun çalışıp çalışmadığını kontrol etmek için kullanılır.'
 ).add()
