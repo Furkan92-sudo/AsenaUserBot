@@ -92,7 +92,7 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 # Güncelleyici için özel (fork) repo linki.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/quiec/AsenaUserBot.git")
+    "https://github.com/Furkan92-sudo/AsenaUserBot.git")
 
 # Ayrıntılı konsol günlügü
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
