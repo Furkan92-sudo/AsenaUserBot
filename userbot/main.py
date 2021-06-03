@@ -236,9 +236,9 @@ async def FotoDegistir (foto):
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
+LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .rose olmuyor amk."
           " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/AsenaSupport")
-LOGS.info(f"Bot sürümünüz: Asena {ASENA_VERSION}")
+LOGS.info(f"Bot sürümünüz: allah {ASENA_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
