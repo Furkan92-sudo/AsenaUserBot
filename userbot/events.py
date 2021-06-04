@@ -122,7 +122,7 @@ def register(**args):
                     file.close()
 
                     if LOGSPAMMER:
-                        await check.client.respond("`Üzgünüm, UserBot'um çöktü.\
+                        await check.client.respond("`Luci gulme bot coktu yardim\
                         \nHata günlükleri UserBot günlük grubunda saklanır.`")
 
                     await check.client.send_file(send_to,
