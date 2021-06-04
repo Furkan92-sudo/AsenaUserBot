@@ -85,7 +85,7 @@ def register(**args):
                     text += f"- sadece bu mesajı buraya iletin {link}.\n"
                     text += "Hata ve Tarih dışında hiçbir şey kaydedilmez\n"
 
-                    ftext = "========== UYARI =========="
+                    ftext = " UYARI"
                     ftext += "\nBu dosya sadece burada yüklendi,"
                     ftext += "\nsadece hata ve tarih kısmını kaydettik,"
                     ftext += "\ngizliliğinize saygı duyuyoruz,"
