@@ -32,23 +32,23 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @AsenaUserBot - %(levelname)s - %(message)s",
+        format="%(asctime)s -  - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @AsenaUserBot - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s -  - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
 if version_info[0] < 3 or version_info[1] < 6:
     LOGS.info("En az python 3.6 sürümüne sahip olmanız gerekir."
-              "Birden fazla özellik buna bağlıdır. Bot kapatılıyor.")
+              "")
     quit(1)
 
 # Yapılandırmanın önceden kullanılan değişkeni kullanarak düzenlenip düzenlenmediğini kontrol edin.
 # Temel olarak, yapılandırma dosyası için kontrol.
 CONFIG_CHECK = os.environ.get(
-    "___________LUTFEN_______BU_____SATIRI_____SILIN__________", None)
+    "", None)
 
 if CONFIG_CHECK:
     LOGS.info(
@@ -311,7 +311,7 @@ with bot:
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Lütfen Sadece .yardım Komutu İle Kullanın",
-                    text=f"**🐺 Tanrı Türk'ü Korusun!** [Asena](https://t.me/AsenaUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"Çalışıyoz İşte [Asena](https://t.me/AsenaUserBot) .\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -331,10 +331,10 @@ with bot:
                     text="""@AsenaUserBot'u kullanmayı deneyin!
 Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın, siz başkasının botunu yönetemezsiniz! Alttaki GitHub adresinden tüm kurulum detayları anlatılmıştır.""",
                     buttons=[
-                        [custom.Button.url("Kanala Katıl", "https://t.me/AsenaUserBot"), custom.Button.url(
-                            "Gruba Katıl", "https://t.me/AsenaSupport")],
+                        [custom.Button.url("Kanala Katıl", "R̶̈́ᴏᵴᵴ       ˵♡"), custom.Button.url(
+                            "Gruba Katıl", "AUUUUUUUUUUUUUUU")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/quiec/AsenaUserBot")]
+                            "GitHub", "")]
                     ],
                     link_preview=False
                 )
